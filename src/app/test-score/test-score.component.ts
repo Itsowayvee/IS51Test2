@@ -29,5 +29,5 @@ export class TestScoreComponent implements OnInit {
     const tests=await this.http.get('assets/tests.json').toPromise();
     return tests.json();
   }
-
+  
 }
