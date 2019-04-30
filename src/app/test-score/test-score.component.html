@@ -1,12 +1,12 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary main-nav">
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <input class="form-control mr-sm-2" type="search" placeholder="Enter your name (Last, First)" aria-label="Search" name="search">
+    <input class="form-control mr-sm-2" type="search" placeholder="Enter your name (First, Last)" aria-label="Search" name="search">
   </div>
 </nav>
 
 <ul class="nav justify-content-end nav-action-container">
   <li class="nav-item">
-    <button mat-raised-button color="primary">Add Test</button>
+    <button mat-raised-button color="primary" (click)="addTest()">Add Test</button>
   </li>
   <li class="nav-item">
     <button mat-raised-button color="primary">Compute Grade</button>
@@ -23,7 +23,7 @@
         </p>
         <p>
           <label for="first">Test Name:</label>
-          <input type="text" class="form-control" placeholder="Test Name" aria-label="test name"
+          <input type="text" class="form-control" placeholder="Test 1" aria-label="test name"
             aria-describedby="basic-addon1">
         </p>
         <p>
